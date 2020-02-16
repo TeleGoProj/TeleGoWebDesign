@@ -1,5 +1,6 @@
 $( document ).ready(function() {
    init();
+   //applyEditableStyle();
 });
 
 function init(){
