@@ -8,3 +8,11 @@ cursor: hand
 .modal{
     z-index: 10000 !important;
 }
+
+.telego-editable-input{
+	display: none;
+}
+
+.hidden-empty-row{
+	display: none;
+}
