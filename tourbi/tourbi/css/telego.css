@@ -16,3 +16,10 @@ cursor: hand
 .hidden-empty-row{
 	display: none;
 }
+
+.transparent-element {
+  outline: none;
+  border: 0;
+  box-shadow: none;
+  background-color: transparent !important;
+}
