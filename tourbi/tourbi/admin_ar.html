@@ -108,7 +108,7 @@
 		<div class="pt-5"></div>
 		<div class="pt-5"></div>
 		<div class="pt-5"></div>
-		
+	<!-- Country lookup -->	
 	<section>
 		<div class="container">
 			<div class="row">
@@ -203,6 +203,218 @@
 			</div>
 		</div>
     </section>
+
+    <div class="pt-5"></div>
+    
+    <!-- Cities lookup -->
+    <section>
+		<div class="container">
+			<div class="row">
+				<div class="card col col-lg-12">
+				  <h5 class="card-header">البحث عن المدينة</h5>
+				  <div class="card-body">
+					<h5 class="card-title">إدارة صفحة المدينة</h5>
+					<p class="card-text">إضافة , تعديل , حذف </p>	
+					<div class="pt-3"></div>
+					
+					<button class="btn btn-secondary" onclick="addRow('cities-table')"><i class="fa fa-plus"></i></button>
+					<button class="btn btn-success mx-5"><i class="fa fa-check"></i></button>
+					
+					<div class="pt-3"></div>
+					<table id="cities-table" class="table table-striped table-hover table-responsive-lg" dir="rtl">
+						<thead>
+							<tr>
+								<th class="th-sm">الاسم باللغة الانجليزية</th>
+                                <th class="th-sm">الاسم باللغة العربية</th>
+                                <th class="th-sm">اسم الدولة </th>
+								<th class="th-sm">الكود</th>
+								<th/>
+								<th/>
+								<th/>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="hidden-empty-row">
+								<td><span class="telego-editable-text"></span><input type="text"  class="telego-editable-input form-control"/></td>
+								<td><span class="telego-editable-text"></span><input type="text"  class="telego-editable-input form-control"/></td>
+                                <td><span class="telego-editable-text"></span><input type="text"  class="telego-editable-input form-control"/></td>
+                                <td><span class="telego-editable-text"></span><input type="text"  class="telego-editable-input form-control"/></td>
+								<td>
+									<i class="fas fa-pencil-alt" id="dd" aria-hidden="true" style="cursor:pointer;" onclick="makeSpanEditable(this)"/>
+								</td>
+								<td>
+									<i class="fa fa-check" aria-hidden="true" style="cursor:pointer;" onclick="submitEditedInputText(this);"/>
+								</td>
+								<td>
+									<i class="fa fa-trash" aria-hidden="true" style="cursor:pointer;" onclick="deleteRow(this)"/>
+								</td>
+							</tr>
+							<tr>
+								<td><span class="telego-editable-text">Cairo</span><input type="text"  class="telego-editable-input form-control"/></td>
+								<td>
+									<span class="telego-editable-text">القاهرة</span>
+									<input type="text"  class="telego-editable-input form-control"/>
+                                </td>
+                                
+                                <td>
+									<span class="telego-editable-text">مصر</span>
+									<input type="text"  class="telego-editable-input form-control"/>
+                                </td>
+
+								<td><span class="telego-editable-text">022</span><input type="text"  class="telego-editable-input form-control" required=/></td>
+								<td>
+									<i class="fas fa-pencil-alt" id="dd" aria-hidden="true" style="cursor:pointer;" onclick="makeSpanEditable(this)"/>
+								</td>
+								<td>
+									<i class="fa fa-check" aria-hidden="true" style="cursor:pointer;" onclick="submitEditedInputText(this);"/>
+								</td>
+								<td>
+									<i class="fa fa-trash" aria-hidden="true" style="cursor:pointer;" onclick="deleteRow(this)"/>
+								</td>
+							</tr>
+							<tr>
+								<td><span class="telego-editable-text">Paris</span><input type="text"  class="telego-editable-input form-control"/></td>
+                                <td><span class="telego-editable-text">باريس</span><input type="text"  class="telego-editable-input form-control"/></td>
+                                <td><span class="telego-editable-text">فرنسا</span><input type="text"  class="telego-editable-input form-control"/></td>
+                                <td><span class="telego-editable-text">0078</span><input type="text"  class="telego-editable-input form-control"/></td>
+                                
+								<td>
+									<i class="fas fa-pencil-alt" id="dd" aria-hidden="true" style="cursor:pointer;" onclick="makeSpanEditable(this)"/>
+								</td>
+								<td>
+									<i class="fa fa-check" aria-hidden="true" style="cursor:pointer;" onclick="submitEditedInputText(this);"/>
+								</td>
+								<td>
+									<i class="fa fa-trash" aria-hidden="true" style="cursor:pointer;" onclick="deleteRow(this)"/>
+								</td>
+							</tr>
+														<tr>
+								<td><span class="telego-editable-text">New York</span><input type="text"  class="telego-editable-input form-control"/></td>
+                                <td><span class="telego-editable-text">نيويورك</span><input type="text"  class="telego-editable-input form-control"/></td>
+                                <td><span class="telego-editable-text">الولايات المتحدة الأمريكية</span><input type="text"  class="telego-editable-input form-control"/></td>
+								<td><span class="telego-editable-text">0056</span><input type="text"  class="telego-editable-input form-control"/></td>
+								<td>
+									<i class="fas fa-pencil-alt" id="dd" aria-hidden="true" style="cursor:pointer;" onclick="makeSpanEditable(this)"/>
+								</td>
+								<td>
+									<i class="fa fa-check" aria-hidden="true" style="cursor:pointer;" onclick="submitEditedInputText(this);"/>
+								</td>
+								<td>
+									<i class="fa fa-trash" aria-hidden="true" style="cursor:pointer;" onclick="deleteRow(this)"/>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				  </div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+    <div class="pt-5"></div>
+    
+    <!-- ِAreas lookup -->
+    <section>
+		<div class="container">
+			<div class="row">
+				<div class="card col col-lg-12">
+				  <h5 class="card-header">البحث عن المنطقة</h5>
+				  <div class="card-body">
+					<h5 class="card-title">إدارة صفحة المنطقة</h5>
+					<p class="card-text">إضافة , تعديل , حذف </p>	
+					<div class="pt-3"></div>
+					
+					<button class="btn btn-secondary" onclick="addRow('areas-table')"><i class="fa fa-plus"></i></button>
+					<button class="btn btn-success mx-5"><i class="fa fa-check"></i></button>
+					
+					<div class="pt-3"></div>
+					<table id="areas-table" class="table table-striped table-hover table-responsive-lg" dir="rtl">
+						<thead>
+							<tr>
+								<th class="th-sm">الاسم باللغة الإنجليزية</th>
+                                <th class="th-sm">الإسم باللغة العربية</th>
+                                <th class="th-sm">اسم المدينة</th>
+								<th class="th-sm">الكود</th>
+								<th/>
+								<th/>
+								<th/>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="hidden-empty-row">
+								<td><span class="telego-editable-text"></span><input type="text"  class="telego-editable-input form-control"/></td>
+								<td><span class="telego-editable-text"></span><input type="text"  class="telego-editable-input form-control"/></td>
+                                <td><span class="telego-editable-text"></span><input type="text"  class="telego-editable-input form-control"/></td>
+                                <td><span class="telego-editable-text"></span><input type="text"  class="telego-editable-input form-control"/></td>
+								<td>
+									<i class="fas fa-pencil-alt" id="dd" aria-hidden="true" style="cursor:pointer;" onclick="makeSpanEditable(this)"/>
+								</td>
+								<td>
+									<i class="fa fa-check" aria-hidden="true" style="cursor:pointer;" onclick="submitEditedInputText(this);"/>
+								</td>
+								<td>
+									<i class="fa fa-trash" aria-hidden="true" style="cursor:pointer;" onclick="deleteRow(this)"/>
+								</td>
+							</tr>
+							<tr>
+								<td><span class="telego-editable-text">Al_Salam</span><input type="text"  class="telego-editable-input form-control"/></td>
+								<td>
+									<span class="telego-editable-text">السلام</span>
+									<input type="text"  class="telego-editable-input form-control"/>
+                                </td>
+                                <td>
+									<span class="telego-editable-text">القاهرة</span>
+									<input type="text"  class="telego-editable-input form-control"/>
+								</td>
+								<td><span class="telego-editable-text">02</span><input type="text"  class="telego-editable-input form-control" required=/></td>
+								<td>
+									<i class="fas fa-pencil-alt" id="dd" aria-hidden="true" style="cursor:pointer;" onclick="makeSpanEditable(this)"/>
+								</td>
+								<td>
+									<i class="fa fa-check" aria-hidden="true" style="cursor:pointer;" onclick="submitEditedInputText(this);"/>
+								</td>
+								<td>
+									<i class="fa fa-trash" aria-hidden="true" style="cursor:pointer;" onclick="deleteRow(this)"/>
+								</td>
+							</tr>
+							<tr>
+								<td><span class="telego-editable-text">Saint-Germain</span><input type="text"  class="telego-editable-input form-control"/></td>
+                                <td><span class="telego-editable-text">سان جيرمان</span><input type="text"  class="telego-editable-input form-control"/></td>
+                                <td><span class="telego-editable-text">فرنسا</span><input type="text"  class="telego-editable-input form-control"/></td>
+								<td><span class="telego-editable-text">0089</span><input type="text"  class="telego-editable-input form-control"/></td>
+								<td>
+									<i class="fas fa-pencil-alt" id="dd" aria-hidden="true" style="cursor:pointer;" onclick="makeSpanEditable(this)"/>
+								</td>
+								<td>
+									<i class="fa fa-check" aria-hidden="true" style="cursor:pointer;" onclick="submitEditedInputText(this);"/>
+								</td>
+								<td>
+									<i class="fa fa-trash" aria-hidden="true" style="cursor:pointer;" onclick="deleteRow(this)"/>
+								</td>
+							</tr>
+														<tr>
+								<td><span class="telego-editable-text">Manhattan</span><input type="text"  class="telego-editable-input form-control"/></td>
+                                <td><span class="telego-editable-text">مانهاتن</span><input type="text"  class="telego-editable-input form-control"/></td>
+                                <td><span class="telego-editable-text">نيويورك</span><input type="text"  class="telego-editable-input form-control"/></td>
+								<td><span class="telego-editable-text">0065</span><input type="text"  class="telego-editable-input form-control"/></td>
+								<td>
+									<i class="fas fa-pencil-alt" id="dd" aria-hidden="true" style="cursor:pointer;" onclick="makeSpanEditable(this)"/>
+								</td>
+								<td>
+									<i class="fa fa-check" aria-hidden="true" style="cursor:pointer;" onclick="submitEditedInputText(this);"/>
+								</td>
+								<td>
+									<i class="fa fa-trash" aria-hidden="true" style="cursor:pointer;" onclick="deleteRow(this)"/>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				  </div>
+				</div>
+			</div>
+		</div>
+    </section>
+
     <!-- banner part start-->
 
     <!-- blog part end-->
