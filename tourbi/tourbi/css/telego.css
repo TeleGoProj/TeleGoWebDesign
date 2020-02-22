@@ -23,3 +23,9 @@ cursor: hand
   box-shadow: none;
   background-color: transparent !important;
 }
+
+.img-thumbnail{        
+    width: 200px;
+    height: 200px;
+    overflow: auto;
+}

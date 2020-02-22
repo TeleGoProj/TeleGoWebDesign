@@ -5,6 +5,7 @@ $( document ).ready(function() {
 function init(){
 $("#closed-header-menu").hide();
 $(".telego-editable-input").hide();
+initSummernoteEditor('About Me');
 }
 
 function toggleBanner(){
@@ -90,4 +91,34 @@ function checkConfirmation(){
 		
 	var confirmed = confirm(confirmationMessage);
 	return confirmed;
+}
+
+function initSummernoteEditor(placeholder){
+$('.summernote-editor').summernote({
+placeholder: placeholder,
+tabsize: 2,
+height: 200
+});
+}
+
+function saveAboutMe(editor_id){
+	var markupStr = $('#' + editor_id).summernote('code');
+	alert(markupStr);
+}
+
+function insertMarkupsIntoEditor(editor_id, markupStr){
+	markupStr = '<p><b><u><span style="font-family: &quot;Comic Sans MS&quot;;">TeleGo E<font color="#00ffff" style="background-color: rgb(57, 123, 33);">dit</font>or</span></u></b></p>';
+	$('#' + editor_id).summernote('code', markupStr);
+}
+
+function previewImage(input, preview_component_id) {
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+    
+    reader.onload = function(e) {
+      $('#' + preview_component_id).attr('src', e.target.result);
+    }
+    
+    reader.readAsDataURL(input.files[0]);
+  }
 }
