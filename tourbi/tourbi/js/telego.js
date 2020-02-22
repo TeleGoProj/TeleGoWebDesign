@@ -38,6 +38,7 @@ function makeRowEditable(tr){
 }
 
 
+
 function submitEditedInputText(el){
 	var td = jQuery(el).parent();
 	var tr = td.parent();
@@ -91,3 +92,11 @@ function checkConfirmation(){
 	var confirmed = confirm(confirmationMessage);
 	return confirmed;
 }
+
+
+$(".dropdown-menu li a").click(function(){
+
+	$(this).parents(".btn-group").find('.selection').text($(this).text());
+	$(this).parents(".btn-group").find('.selection').val($(this).text());
+  
+  });
