@@ -89,8 +89,9 @@ function addRow(table_id){
 	var newRow = emptyRow.clone();
 	newRow.removeClass('hidden-empty-row');
 	makeRowEditable(newRow);
+	
 	newRow.appendTo( table );
-
+makeDropdownClickable(table);
 }
 
 function checkConfirmation(){
@@ -139,3 +140,25 @@ $(".dropdown-menu li a").click(function(){
 	$(this).parents(".btn-group").find('.selection').val($(this).text());
   
   });
+
+function makeDropdownClickable(table){
+	
+	var menuGroup =  $(table).find($('tr').last().find($('.btn-group')));
+	
+		menuGroup.each(function(){
+		
+			var liArray = $(this).find($('li'));
+			
+			var displaySelectionSpan = ($(this).find($('.selection')));
+
+				liArray.each(function( index ) {
+				 $(this).click(function(){
+					 var a = $(this).find($('a'));
+					 var aText = a.text();
+					 displaySelectionSpan.text(aText);
+					 displaySelectionSpan.removeAttr("style");
+				 }) ;
+			});	
+		}
+	);
+}
