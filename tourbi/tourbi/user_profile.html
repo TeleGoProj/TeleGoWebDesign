@@ -187,8 +187,8 @@
     <div class="form-group required">
       <label for="email" class="control-label">Email Address </label>
       <input type="email" class="form-control" name="email" required placeholder="email address">
- 
-  </div>
+   </div>
+   <br>
 </div> <!--end first col-->
 
 <!--second col-->
@@ -206,7 +206,37 @@
 </div>
 
 </div> <!--end second col-->
-  </div>
+  </div> <!--end row-->
+<!--phone droplist-->
+<label><h4>LandLine Phone</h4></label>  
+<div class="row">
+  <div class="col">
+   <div class="btn-group">
+       <button type="button" class="btn btn-default dropdown-toggle btn-outline-primary" data-toggle="dropdown" aria-expanded="false">
+      <span class="selection">Choose Country</span><span class="caret"></span>
+     </button>
+     <ul class="dropdown-menu" role="menu" id="choose2" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 38px, 0px);">
+       <input class="form-control" id="myInputDrop" type="text" placeholder="Search..." >
+                 <li><a>Egypt</a></li>
+                 <li><a>England</a></li>
+                 <li><a>India</a></li>
+          </ul>
+
+     <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Enter landline phone" class="form-control ">
+     </div>
+     </div>
+
+     <div class="col">
+      <div class="form-group required">
+        <div class="form-group text-left"><input class="btn btn-primary" type="submit" value="Save"></div>
+      </div>
+     </div>
+</div>
+<!--end phone-->
+
+
+
+
       </div>
     </div>
     </div>
