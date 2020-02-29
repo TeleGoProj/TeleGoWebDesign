@@ -29,6 +29,7 @@
     <!-- style CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link href="libraries/summernote-0.8.16/summernote.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/bootstrap-select-country.min.css">
 	  <!-- TeleGo CSS -->
 	 <link rel="stylesheet" href="css/telego.css">
 </head>
@@ -211,17 +212,50 @@
 <label><h4>LandLine Phone</h4></label>  
 <div class="row">
   <div class="col">
-   <div class="btn-group">
+   <div class="btn-group show-tick countrypicker f16">
        <button type="button" class="btn btn-default dropdown-toggle btn-outline-primary" data-toggle="dropdown" aria-expanded="false">
       <span class="selection">Choose Country</span><span class="caret"></span>
      </button>
      <ul class="dropdown-menu" role="menu" id="choose2" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 38px, 0px);">
        <input class="form-control" id="myInputDrop" type="text" placeholder="Search..." >
-                 <li><a>Egypt</a></li>
-                 <li><a>England</a></li>
-                 <li><a>India</a></li>
+                 <li>
+										<a class="dropdown-item cursor-hand"><span class="inline-flag flag"/>
+											<span class="inline-flag flag eg"></span>
+											<span class="text">Egypt</span>
+											<span class="text">(20)</span>
+										</a>
+								 </li>
+                 <li>
+										<a class="dropdown-item cursor-hand"><span class="inline-flag flag"/>
+											<span class="inline-flag flag us"></span>
+											<span class="text">United States</span>
+											<span class="text">(+1)</span>
+										</a>
+								 </li>
+                 <li>
+										<a class="dropdown-item cursor-hand"><span class="inline-flag flag"/>
+											<span class="inline-flag flag fr"></span>
+											<span class="text">France</span>
+											<span class="text">(+33)</span>
+										</a>
+								 </li>
+                 <li>
+										<a class="dropdown-item cursor-hand"><span class="inline-flag flag"/>
+											<span class="inline-flag flag de"></span>
+											<span class="text">المنيا</span>
+											<span class="text">(+49)</span>
+										</a>
+								 </li>
+                 <li>
+										<a class="dropdown-item cursor-hand"><span class="inline-flag flag"/>
+											<span class="inline-flag flag in"></span>
+											<span class="text">الهند</span>
+											<span class="text">(+91)</span>
+										</a>
+								 </li>
           </ul>
-
+			
+		<div class="px-1"></div>
      <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Enter landline phone" class="form-control ">
      </div>
      </div>

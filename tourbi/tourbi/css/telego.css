@@ -1,8 +1,8 @@
 .close{
     font-size: 2.5rem;
 }
-.{
-cursor: hand
+.cursor-hand{
+  cursor: pointer
 }
 
 .modal{
