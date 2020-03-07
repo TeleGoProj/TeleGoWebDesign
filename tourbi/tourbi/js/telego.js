@@ -187,7 +187,7 @@ function makeDropdownClickable(table){
  
 
   /*  feature search*/
-  var countries = ["food","fashion","fitness","sport","safari", "reading" , "running" , "travel" , "tennis" , "shopping" ,"pets" , "photography"];
+  var countries = ["food","fashion", "music" , "fitness","football","safari", "reading" , "running" , "travel" , "tennis" , "shopping" ,"pets" , "photography"];
 
   function autocomplete(inp, arr) {
 	/*the autocomplete function takes two arguments,
