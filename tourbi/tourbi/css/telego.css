@@ -92,3 +92,8 @@ input[type=submit] {
   color: #ffffff;
 }
 /* end feature search */
+
+.feature{
+  font-size: 48px;
+   color: Dodgerblue;
+}
