@@ -23,3 +23,8 @@ cursor: hand
   box-shadow: none;
   background-color: transparent !important;
 }
+
+.search-result-card-brief {
+	max-height: 90px;
+	overflow-y: hidden;
+}
